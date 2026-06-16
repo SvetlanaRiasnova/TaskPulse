@@ -26,6 +26,10 @@ app.get('/tasks', (req, res) => {
         res.json(rows);
     });
 });
+
+app.get('/tasks/:id', (req, res) => {
+
+})
 // Ручка для создания задачи (POST /tasks)
 // Сюда мы будем отправлять данные из Vue, чтобы сохранить задачу в БД
 app.post('/tasks', (req, res) => {
