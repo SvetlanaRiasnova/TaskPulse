@@ -34,7 +34,7 @@ app.post('/tasks', (req, res) => {
 
     res.status(201).json({
       id: this.lastID,
-      title,
+      title: title,
       description: description || '',
       completed: 0,
       message: '✅ Задача успешно создана!'
